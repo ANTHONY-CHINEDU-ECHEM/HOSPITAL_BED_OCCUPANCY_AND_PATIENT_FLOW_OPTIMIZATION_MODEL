@@ -46,6 +46,8 @@ Two data issues shaped the entire analysis and are worth stating plainly:
   <tr><td>Monte Carlo agreement with exact expected census</td><td>within 2 percent</td></tr>
 </table>
 
+<img width="1066" height="360" alt="Screenshot 2026-09-28 at 22 56 09" src="https://github.com/user-attachments/assets/59b666a7-05b9-44c4-9476-e65a790d75de" />
+
 ## Success metrics
 
 <table>
@@ -55,6 +57,9 @@ Two data issues shaped the entire analysis and are worth stating plainly:
   <tr><td>Three validated historical surge scenarios</td><td>The 3 highest admission weeks replayed stably</td><td>Met</td></tr>
   <tr><td>Bed meeting preparation time cut by about 70 percent</td><td>Not measurable from the data; the heat map replaces manual census compilation</td><td>Estimate</td></tr>
 </table>
+
+<img width="1158" height="299" alt="Screenshot 2026-09-28 at 22 57 56" src="https://github.com/user-attachments/assets/6c00ac2f-e4eb-4795-a239-7cd26932eee3" />
+
 
 ## Findings in detail
 
@@ -66,17 +71,27 @@ Occupancy at the start of the forecast window stands at 71.8 percent and is expe
 
 The discharge lag was fitted by specialty against four candidate distributions (Poisson, Normal censored at zero, Gamma and a hurdle Gamma), with chi square goodness of fit tests. The censored Normal gives the best description. Crucially, the dispersion index is about 2.7, meaning the variance is nearly three times what a Poisson process would produce. In operational terms, discharges do not simply run a little late on average; some run very late, and it is these long tails that create the unpredictable bed shortages that trigger escalation. Interventions that make discharge more consistent, such as standardised criteria led discharge, pharmacy turnaround targets and a protected discharge lounge, should therefore be valued alongside those that reduce the average.
 
+<img width="767" height="363" alt="Screenshot 2026-09-28 at 22 59 15" src="https://github.com/user-attachments/assets/4f481588-4512-4cf6-903c-bac4f1990d41" />
+
+
 ### 3. Roughly a quarter of the annual loss is recoverable with realistic policy changes
 
 The scenario simulator combines seven day discharging, discharge lag reduction, faster bed turnover, a before noon discharge target, staffing and surge levers. At their default settings, these levers recover about 554 thousand dollars a year, which is equivalent to 5.1 staffed beds and roughly 24 percent of the 2.3 million dollar loss. This framing matters for decision making: the hospital can gain the effective capacity of about five beds without capital spend or recruitment for new posts, simply by releasing beds sooner. Because every lever is an input, leadership can test more or less ambitious targets and see the result in beds and dollars instantly.
+
+<img width="685" height="328" alt="Screenshot 2026-09-28 at 23 00 45" src="https://github.com/user-attachments/assets/52221c65-fa41-4b27-b7ac-98dd366227c3" />
 
 ### 4. Weekend discharge behaviour builds a predictable Monday backlog
 
 The forecast applies weekend discharge factors when propagating the census, and the effect is visible in the 72 hour horizon: occupancy that looks comfortable on a Friday can tighten sharply by Monday morning because discharges slow while admissions continue. This is the pattern the seven day discharge lever is designed to address, and it is also why the forecast should be read ahead of the weekend rather than on the day.
 
+<img width="689" height="330" alt="Screenshot 2026-09-28 at 23 01 33" src="https://github.com/user-attachments/assets/fffbff4a-3217-4e41-92d9-8ad78c8eedb4" />
+
+
 ### 5. The forecast is reliable at hospital level and honest about unit level limits
 
 Over the weekly backtest, the hospital level forecast lands within 4 points of actual occupancy in 88.2 percent of weeks, with a mean absolute error of 2.05 points. At unit week level the figure falls to 36.1 percent. This gap is a data finding rather than a modelling failure: the extract contains roughly one occupancy reading per unit per day, which is too sparse and noisy to validate unit forecasts tightly. The model is therefore ready to support hospital wide capacity planning now, while unit level breach flags should be treated as directional until better census data is available.
+
+<img width="697" height="306" alt="Screenshot 2026-09-28 at 23 02 21" src="https://github.com/user-attachments/assets/b9d98644-eced-4edd-a8af-b12111c10562" />
 
 ### 6. Recorded occupancy is not reconciled to patient movements
 
